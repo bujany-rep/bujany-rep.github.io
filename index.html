@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jantarowa 18 Backup — prywatne narzędzie do szyfrowanych kopii zapasowych Raspberry Pi na Google Drive.">
+  <title>Jantarowa 18 Backup — kopie zapasowe</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><div class="wrap"><a class="brand" href="/">Jantarowa 18 Backup</a><nav aria-label="Nawigacja"><a href="/">O aplikacji</a><a href="/privacy.html">Prywatność</a><a href="/terms.html">Warunki korzystania</a></nav></div></header>
+  <main class="wrap">
+    <div class="eyebrow">Prywatna aplikacja · Google Drive API</div>
+    <h1>Bezpieczne kopie zapasowe domowego serwera</h1>
+    <p class="lead">Jantarowa 18 Backup to prywatna konfiguracja do automatycznego tworzenia i przechowywania zaszyfrowanych kopii zapasowych Raspberry Pi oraz usług domowych na koncie Google Drive właściciela.</p>
+    <section class="card" aria-labelledby="how"><h2 id="how">Jak działa aplikacja?</h2>
+      <ul>
+        <li>Tworzy kopie zapasowe danych i konfiguracji domowego serwera przy użyciu <strong>Restic</strong>.</li>
+        <li><strong>Szyfruje dane lokalnie</strong> przed wysłaniem ich do chmury.</li>
+        <li>Korzysta z <strong>rclone i Google Drive API</strong> do przesyłania, odczytu, weryfikowania i zarządzania plikami kopii zapasowych na koncie właściciela.</li>
+        <li>Umożliwia odtworzenie danych w razie awarii lub utraty urządzenia.</li>
+      </ul>
+      <div class="callout"><p><strong>Wyłącznie do użytku prywatnego.</strong> Nie jest to publiczna usługa ani aplikacja udostępniana innym użytkownikom. Nie oferuje rejestracji ani zewnętrznych kont.</p></div>
+      <h2>Dlaczego potrzebny jest dostęp do Google Drive?</h2>
+      <p>Uwierzytelnienie OAuth pozwala narzędziu rclone uzyskać dostęp do konta Google Drive wyraźnie autoryzowanego przez właściciela, aby tworzyć i odczytywać pliki zaszyfrowanych kopii oraz zarządzać ich przechowywaniem. Zakres faktycznych uprawnień zależy od zgód nadanych przy autoryzacji.</p>
+      <p>Treści domowego backupu nie są publikowane na tej stronie ani udostępniane odwiedzającym. Zawartość kopii pozostaje zaszyfrowana hasłem Restic, przechowywanym oddzielnie od publicznej witryny.</p>
+    </section>
+    <section class="card"><h2>Przejrzystość i kontakt</h2>
+      <p>Informacje o dostępie do danych, sposobie ich przetwarzania i rezygnacji z uprawnień zawiera <a href="/privacy.html">polityka prywatności</a>. Zasady prywatnego wykorzystania opisano w <a href="/terms.html">warunkach korzystania</a>.</p>
+      <p>Kontakt w sprawie aplikacji: <a href="mailto:backup.jantarowa18@gmail.com">backup.jantarowa18@gmail.com</a>.</p>
+    </section>
+  </main>
+  <footer><div class="wrap">Jantarowa 18 Backup · Prywatny projekt backupu · <a href="/privacy.html">Polityka prywatności</a> · <a href="/terms.html">Warunki korzystania</a></div></footer>
+</body>
+</html>

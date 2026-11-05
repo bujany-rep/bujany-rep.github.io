@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Polityka prywatności prywatnej aplikacji Jantarowa 18 Backup.">
+  <title>Polityka prywatności — Jantarowa 18 Backup</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="/">Jantarowa 18 Backup</a><nav aria-label="Nawigacja"><a href="/">O aplikacji</a><a href="/privacy.html" aria-current="page">Prywatność</a><a href="/terms.html">Warunki korzystania</a></nav></div></header>
+<main class="wrap">
+  <div class="eyebrow">Ochrona danych</div>
+  <h1>Polityka prywatności</h1>
+  <div class="date">Data aktualizacji: 5 listopada 2026 r.</div>
+  <p class="lead">Niniejszy dokument opisuje przetwarzanie danych w prywatnym rozwiązaniu Jantarowa 18 Backup, które korzysta z Restic, rclone i interfejsu Google Drive API do przechowywania zaszyfrowanych kopii zapasowych.</p>
+  <article class="card">
+    <h2>1. Administrator i kontakt</h2>
+    <p>Jantarowa 18 Backup jest używany wyłącznie przez właściciela prywatnego środowiska domowego. Kontakt w sprawach dotyczących aplikacji i danych: <a href="mailto:backup.jantarowa18@gmail.com">backup.jantarowa18@gmail.com</a>.</p>
+    <h2>2. Zakres dostępu do Google</h2>
+    <p>Po uzyskaniu świadomej zgody właściciela narzędzie rclone korzysta z Google Drive API w zakresie nadanych uprawnień. Może odczytywać listę i metadane plików, przesyłać i pobierać pliki kopii oraz usuwać pliki związane z obsługą repozytorium backupowego. Dokładny zakres dostępu wynika z ekranu autoryzacji OAuth i konfiguracji rclone.</p>
+    <p>Aplikacja nie wymaga dostępu do Gmaila, kontaktów ani kalendarza i nie wykorzystuje danych Google do profilowania lub reklam.</p>
+    <h2>3. Cel wykorzystania danych</h2>
+    <p>Dane z Google Drive służą wyłącznie do tworzenia, przechowywania, weryfikowania, rotacji i odzyskiwania prywatnych kopii zapasowych. Zawartość kopii jest szyfrowana lokalnie przez Restic przed przesłaniem do Google Drive. Nazwy plików, wielkości i inne metadane usługowe mogą być widoczne dla operatora przechowywania.</p>
+    <h2>4. Przechowywanie i udostępnianie</h2>
+    <p>Archiwa znajdują się na koncie Google Drive właściciela; konfiguracja rclone i token OAuth są przechowywane lokalnie na jego Raspberry Pi. Witryna informacyjna nie przechowuje tokenów OAuth ani kopii zapasowych. Dane nie są sprzedawane i nie są udostępniane zewnętrznym reklamodawcom.</p>
+    <p>Google przetwarza dane przechowywane na Drive według własnych warunków i zasad prywatności. Sama strona informacyjna jest hostowana przez GitHub Pages, którego infrastruktura może przetwarzać techniczne dane związane z odwiedzinami.</p>
+    <h2>5. Retencja i usuwanie</h2>
+    <p>Kopie są utrzymywane zgodnie z lokalnie ustaloną polityką retencji Restic. Właściciel może usunąć kopie z Google Drive, zatrzymać harmonogram backupu lub cofnąć zgodę OAuth w ustawieniach bezpieczeństwa konta Google. Cofnięcie zgody uniemożliwi dalszy dostęp rclone do Google Drive do czasu ponownej autoryzacji.</p>
+    <h2>6. Bezpieczeństwo</h2>
+    <p>Dane kopii zapasowych są szyfrowane przed wysłaniem. Dostęp do konfiguracji uwierzytelnienia i hasła repozytorium jest ograniczony do systemu właściciela. Publiczna strona nie stanowi interfejsu do odczytu ani przywracania kopii.</p>
+    <h2>7. Działanie tej strony</h2>
+    <p>Strona nie używa własnych formularzy, narzędzi analitycznych ani skryptów śledzących. Zwykłe techniczne dane połączenia mogą być obsługiwane przez dostawcę hostingu GitHub Pages.</p>
+    <h2>8. Aktualizacje</h2>
+    <p>Polityka może być aktualizowana w miarę zmian konfiguracji. Aktualna wersja jest publikowana pod tym samym adresem.</p>
+  </article>
+</main>
+<footer><div class="wrap"><a href="/">Strona główna</a> · <a href="/privacy.html">Polityka prywatności</a> · <a href="/terms.html">Warunki korzystania</a></div></footer>
+</body>
+</html>
